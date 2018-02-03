@@ -1,5 +1,23 @@
 <!DOCTYPE html>
 <html>
- <title>this is a html</title>
- hello world
-  </html>
+<head>
+  <meta charset="utf-8">
+  <title>JS Bin</title>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/marked/0.3.12/marked.js">
+  </script>
+   <link rel="stylesheet" href="./typo.css">
+</head>
+<body>
+  <div id="content">
+# 我的博客
+## 第一章
+送你一案三木乡没收到吗马路上的吗收到没熟练度
+  </div>
+  <script>
+    var html=document.getElementById('content')
+    var context=html.innerHTML
+    var mark=marked(context)
+    html.innerHTML=mark
+  </script>
+</body>
+</html>
